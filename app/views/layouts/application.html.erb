@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MonolithHomepage</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<!-- Site preloader -->
+	<!-- <section id="preloader">
+	    <div class="site-spinner"></div>
+	</section> -->
+	<!-- End Site preloader -->
+	<!-- Page Wraper -->
+    <div id="page-wraper">
+        <div class="wrapper">	
+        	<%= render partial: 'shared/header' %>   
+			<%= yield %>
+			<%= render partial: 'shared/footer' %>   
+		</div>
+    </div>
+    <!-- End Page Wraper -->
+</body>
+</html>
